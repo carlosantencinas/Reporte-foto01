@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reporte Beneficiarios</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Generar Reporte de Beneficiarios</h1>
+
+  <label for="comunidad">Comunidad:</label>
+  <select id="comunidad"></select>
+
+  <label for="beneficiario">Beneficiario:</label>
+  <select id="beneficiario">
+    <option>(Ninguno)</option>
+  </select>
+
+  <label for="titulo">Título:</label>
+  <input type="text" id="titulo" placeholder="Escribe el título del reporte" />
+
+  <label for="descripcion">Descripción:</label>
+  <textarea id="descripcion" placeholder="Escribe la descripción"></textarea>
+
+  <label for="imagenes">Subir Fotos:</label>
+  <input type="file" id="imagenes" multiple accept="image/*" />
+
+  <button id="btnGenerar">Generar Reporte</button>
+
+  <div id="salida"></div>
+
+  <!-- Librerías externas -->
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
